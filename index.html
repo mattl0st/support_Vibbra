@@ -1,0 +1,115 @@
+<!DOCTYPE html5>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Suporte Vibbra!</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="suportstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<div class="bluebar">
+    <img src="https://selecao.vibbra.com.br/static/media/logo_vibbra.f70b83c6.png" alt="Logo da Vibbra"
+        class="vibbralogo">
+    <h3 class="sup">| Suporte</h3>
+</div>
+
+
+<body>
+
+    <div class="topo">
+        <h2 class="send">Enviar um pedido</h2>
+        <p class="action">Não importa se é um probleminha técnico, estamos aqui para ajudar! <br>Envie um ticket! Se ele não
+            se perder ou sumir por causa de falta de internet, responderemos em breve.</p>
+
+
+
+
+        <!--Formulário do nome, e-mail e telefone-->
+
+        <br>
+        <div class="container">
+            <form>
+                <div>
+                    <label for="name" class="fill"><strong>Nome completo*</strong></label>
+                    <input type="text" name="nome" class="squarefill" placeholder="Digite seu nome" required>
+                </div></br>
+
+                <br>
+                <div>
+                    <label for="email" class="fill"><strong>E-mail*</strong></label>
+                    <input type="email" name="email" class="squarefill" placeholder="Email" required>
+                </div></br>
+
+                <br>
+                <div>
+                    <label for="telefone" class="fill"><strong>Telefone</strong></label>
+                    <input type="tel" name="telefone" class="squarefill" placeholder="(XX) 0000-0000">
+                </div></br>
+
+                <!--Opções para cliente e profissional-->
+                <div class="clientes"><label for="clientorprofissional">
+                        <br>
+                        <h3>Você é cliente ou profissional? </h3>
+                    </label><br>
+                    <br><label><input type="radio" name="clientorprofissional" value="cliente"
+                            class="rara">Cliente</label>
+                    <label><input type="radio" name="clientorprofissional" value="profissional" class="rara"
+                            checked>Profissional</label>
+                </div>
+            </form>
+
+            <!--Items para serem selecionados na caixa de seleção-->
+            <div class="select">
+                <h3>Como posso te ajudar:</h3><br>
+                <select name="format" class="lista">
+                    <option selected disable class="select">Escolha uma opção</option>
+                    <option value="bug">Reportar um bug</option>
+                    <option value="login">Tela de login</option>
+                    <option value="credit">Resgate de crédito</option>
+                    <option value="test">Teste técnico</option>
+                    <option value="invoice">Não consigo anexar nota fiscal</option>
+                    <option value="msgclient">Não consigo acessar a mensagem dos clientes</option>
+                    <option value="search">Meu perfil não aparece na busca</option>
+                    <option value="editinfo">Não consigo editar minhas informações</option>
+                    <option value="other">Outro</option>
+                </select>
+
+                <!--Descrição do problema/bug-->
+                <div>
+                    <br>
+                    <label for="description" id="bugdescript">
+                        <h3>Descrição do problema</h3><br>
+                    </label>
+                    <textarea name="description"></textarea>
+                </div>
+
+                <!--Anexar um arquivo-->
+
+                <br><label class="custom-file-upload">
+                    <input class="custom-file" type="file" />
+                    <i class="fa fa-cloud-upload"></i> Escolher arquivo
+                </label></br> 
+                <p class="enviosup">Ajudaremos você o mais rápido possível.</p>
+
+                <br><button type="submit" class="envio">Enviar</button>
+            </div></br>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+
+</html>
